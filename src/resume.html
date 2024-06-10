@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Bedir Aygun</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() != 0) {
+                $("#nav").removeClass("animateSlideUp");
+            }
+        });
+        $(function () {
+            typeWriter();
+
+            AOS.init({
+                duration: 1100,
+            });
+        });
+        var i = 0;
+        var txt = 'Developer';
+        var speed = 120;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("developerDescriptor").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+    </script>
+    <style>
+        .blueText {
+            color: #3399ff;
+        }
+
+        .resume-containerPadding {
+            padding: 0.01em 16px;
+        }
+
+        .resume-items {
+            font-weight: bold;
+            opacity: 0.60;
+            margin: 0.3em 0;
+        }
+
+        .resume-links {
+            color: #303030;
+        }
+
+        .company-items {
+            display: inline-block;
+            font-size: 1.1em;
+            margin: 0.4em 0;
+        }
+
+        .padding-16 {
+            padding-top: 16px !important;
+            padding-bottom: 16px !important;
+        }
+
+        .margin-right {
+            margin-right: 16px !important;
+        }
+
+        .xxlarge {
+            font-size: 36px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <div class="centeredDiv">
+            <div id="mainText">BEDIR</div>
+            <ul id="descriptors">
+                <li id="developerDescriptor" style="min-width: 115px"></li>|
+                <li data-aos="zoom-in" data-aos-duration="1700">Designer</li>|
+                <li data-aos="fade-left" data-aos-duration="1700">Explorer</li>
+            </ul>
+        </div>
+    </div>
+    <nav id="nav" class="animateSlideUp">
+        <ul id="navLinks" class="links">
+            <li><a href="index.html"><i class="far fa-user"></i> Bedir</a></li>
+            <li class="active"><a href="resume.html"><i class="far fa-file"></i> Resume</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://stackoverflow.com/users/10740446/bedir" target="_blank"><i
+                        class="fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://github.com/bediruna" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+    <div id="mobileNav" data-aos="fade-left">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <li><a href="index.html" class="mobileNavLink"><i class="far fa-user"></i> Bedir</a></li>
+            <li class="active"><a href="resume.html" class="mobileNavLink"><i class="far fa-file"></i> Resume</a></li>
+            <li><a href="projects.html" class="mobileNavLink"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="https://stackoverflow.com/users/10740446/bedir" target="_blank"><i
+                        class="mobileNavIcon fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun" target="_blank"><i
+                        class="mobileNavIcon fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://github.com/bediruna" target="_blank"><i class="mobileNavIcon fab fa-github"></i></a>
+            </li>
+            <li><a href="mailto:contact@bedir.dev"><i class="mobileNavIcon fa fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div id="mainCard">
+        <h2 class="padding-16"><i class="fa fa-suitcase fa-fw margin-right xxlarge blueText"></i>Work
+            Experience</h2>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Software Engineer (Contract)</h5>
+            <span class="company-items">Center for Applied Management</span>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Oct 2022 - Present</h6>
+            <p>Full stack web application development using .Net on the back end. React on the front end. Fixing bugs and adding features to the existing project.</p>
+            <ul>
+                <li>Working to bring existing code up to current standards.</li>
+                <li>Adding client-requested features.</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Freelance Software Developer</h5>
+            <span class="company-items">Upwork</span>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Jun 2022 - Present</h6>
+            <p>.Net Core Web Application development. Working on the company's eCommerce platform. Adding features and fixing bugs for an existing solution.</p>
+            <ul>
+                <li>Assisted clients with basic web development.</li>
+                <li>Used my experience with HTML, CSS, and JS to improve existing client websites.</li>
+                <li>Provided game testing feedback based on Unity game development experience.</li>
+                <li>Provided advice based on years of varied software development experience.</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Full Stack .Net Developer</h5>
+            <span class="company-items">Amerinational Management Systems</span>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Nov 2020 - Jul 2022</h6>
+            <p>Full stack .NET development. Working with .NET Core Web APIs, Razor Pages, MVC, Xamarin, Blazor, and web
+                development. Developing applications and systems starting from setting up the server and database, all
+                the way to creating and fine tuning the user interface.</p>
+            <ul>
+                <li>Played a key role in updating a 30-year-old system to a modern .Net Core solution.</li>
+                <li>Developed systems that transported 1000s of messages daily.</li>
+                <li>Developed a Xamarin based mobile application. Allowing AMS to be competitive in the market and meet
+                    the needs of our clients</li>
+                <li>Developed an application that automated document merging to save hours of manual labor.</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Software Developer</h5><span class="company-items">USALLIANCE Financial</span>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Nov 2018 - Oct 2020</h6>
+            <ul>
+                <li>Designed and developed ASP.Net Web Forms applications from the front end to back end.</li>
+                <li>Designed, developed, and maintained code solutions for business software applications.</li>
+                <li>Developed unit test cases/criteria to verify all functionality is working correctly based on
+                    specified requirements. Contribute to testing strategies, architecture, and provide feedback for
+                    improvements.</li>
+                <li>Worked with QA and business teams to understand the modules and components targeted for development.
+                </li>
+                <li>Worked closely with the Business Analysts to ensure code quality, accuracy, and the correct business
+                    solution has been developed.</li>
+                <li>Troubleshot program problems and failures and work with teams and vendors to resolve issues.</li>
+                <li>Provided assistance to projects that support the implementation of company-wide information systems
+                    in collaboration with functional users.</li>
+                <li>Developed and modified technical documentation to support application implementation, maintenance,
+                    and
+                    operations.</li>
+                <li>Technologies used include: C#, ASP.NET, JavaScript, jQuery, HTML, CSS, and SQL.</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Software Developer / EDI Manager</h5>
+            <span class="company-items">DM World Logistics</span>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Jun 2017 - Oct 2018</h6>
+            <ul>
+                <li>Developed internal transportation management software from the ground up. Technologies used include:
+                    C#, ASP.NET, JavaScript, HTML, CSS, PHP, and SQL.</li>
+                <li>Designed and made critical choices in the development of software.</li>
+                <li>Wrote and implemented automation scripts that saved hours of repetitive work.</li>
+                <li>Researched, implemented, and maintained software, utilities, tools, and scripts to automate or
+                    improve user experiences and efficiencies.</li>
+                <li>Communicated directly with upper-level management to determine and implement the best solution for
+                    software-related issues.</li>
+                <li>Facilitated EDI connection with essential customers.</li>
+                <li>Maintained and troubleshot EDI systems.</li>
+            </ul>
+            <hr>
+        </div>
+        <br>
+        <h2 class="padding-16"><i class="fa fa-book fa-fw margin-right xxlarge blueText"></i>Education</h2>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Western Governors University</h5>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Dec 2017 - Sep 2020</h6>
+            <p>Bachelor of Science in Software Development</p>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Northern Essex Community College</h5>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>May 2014 - Aug 2017</h6>
+            <p>Associate of Science in Computer Science</p>
+        </div>
+        <br>
+        <h2><i class="fa fa-certificate fa-fw margin-right xxlarge blueText"></i>Certifications</h2>
+
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">CompTIA Project+</h5>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Aug 2020</h6>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">CompTIA A+</h5>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>May 2018</h6>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">Mendix Rapid Developer</h5>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Dec 2018</h6>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">CIW Advanced HTML5 & CSS3 Specialist</h5>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Jan 2018</h6>
+            <p>CIW ID 800822</p>
+            <hr>
+        </div>
+        <div class="resume-containerPadding">
+            <h5 class="resume-items">CIW User Interface Designer</h5>
+            <h6 class="blueText"><i class="fa fa-calendar fa-fw margin-right"></i>Jul 2018</h6>
+            <p>CIW ID 800822</p>
+        </div>
+        <!-- <div class="text-center">
+            <a href="Bedir'sResume.pdf" download  class="button">Download PDF of Resume</a>
+        </div> -->
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="https://stackoverflow.com/users/10740446/bedir" target="_blank"><i
+                        class="fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://github.com/bediruna" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+        <br>
+        <span> Bedir Aygun</span>
+    </div>
+
+</body>
+
+</html>

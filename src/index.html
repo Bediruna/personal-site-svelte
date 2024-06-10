@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Bedir Aygun</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop() != 0) {
+                $("#nav").removeClass("animateSlideUp");
+            }
+        });
+        $(function() {
+            typeWriter();
+
+            AOS.init({
+                duration: 1100,
+            });
+        });
+        var i = 0;
+        var txt = 'Developer';
+        var speed = 120;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("developerDescriptor").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <div class="centeredDiv">
+            <div id="mainText">BEDIR</div>
+            <ul id="descriptors">
+                <li id="developerDescriptor" style="min-width: 115px"></li>|
+                <li data-aos="zoom-in" data-aos-duration="1700">Designer</li>|
+                <li data-aos="fade-left" data-aos-duration="1700">Explorer</li>
+            </ul>
+        </div>
+    </div>
+    <nav id="nav" class="animateSlideUp">
+        <ul id="navLinks" class="links">
+            <li class="active"><a href="index.html"><i class="far fa-user"></i> Bedir</a></li>
+            <li><a href="resume.html"><i class="far fa-file"></i> Resume</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://stackoverflow.com/users/10740446/bedir"><i class="fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bediruna"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+    <div id="mobileNav" data-aos="fade-left">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <li><a href="index.html" class="mobileNavLink"><i class="far fa-user"></i> Bedir</a></li>
+            <li><a href="resume.html" class="mobileNavLink"><i class="far fa-file"></i> Resume</a></li>
+            <li><a href="projects.html" class="mobileNavLink"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="https://stackoverflow.com/users/10740446/bedir" target="_blank"><i class="mobileNavIcon fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun" target="_blank"><i class="mobileNavIcon fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://github.com/bediruna" target="_blank"><i class="mobileNavIcon fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="mobileNavIcon fa fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div id="mainCard" class="text-center">
+        <div class="descriptor-section" id="developerDiv">
+            <div class="section-title">DEVELOP</div>
+            <div class="section-text">I am a software developer with experience in object-oriented programming, full
+                stack web development, automation, and information technology. From building simple websites, to complex
+                user portals for critical systems, I have experience using the full stack of technologies.</div>
+            <div class="logos">
+                <img src="img/HTML5Logo.png" alt="HTML5" data-aos="zoom-in">
+                <img src="img/CSS3Logo.png" alt="CSS3" data-aos="zoom-in">
+                <img src="img/JSLogo.png" alt="JavaScript" data-aos="zoom-in">
+                <!-- <img src="img/DotNetLogo.png" alt="Dot Net" data-aos="zoom-in"> -->
+                <img src="img/CSharpLogo.png" alt="C#" data-aos="zoom-in">
+                <img src="img/SQLLogo.png" alt="SQL" data-aos="zoom-in">
+            </div>
+        </div>
+        <hr />
+
+        <div class="descriptor-section" id="designerDiv">
+            <div class="section-title">DESIGN</div>
+            <div class="section-text">When it comes to developing beautiful and effective applications, implementing
+                good User Interface design is essential. I spend a lot of time thinking about the user experience, and
+                how to improve processes. At the same time, I like to maintain an aesthetically pleasing design.</div>
+            <div class="logos">
+                <img src="img/CIWLogo.png" alt="CIW Cert" data-aos="zoom-in">
+                <img src="img/WebDesignBlue.png" alt="Web Design" data-aos="zoom-in">
+                <img src="img/ComputerRepairLogo.png" alt="Computer Repair" data-aos="zoom-in">
+            </div>
+        </div>
+        <hr />
+
+        <div class="descriptor-section" id="explorerDiv">
+            <div class="section-title">EXPLORE</div>
+            <div class="section-text">I love to learn new things. I am constantly working on improving myself and my
+                skills. My curiousity and love for adventure keeps me searching for the next best thing. Technology is
+                constantly evolving, and I am always looking for the best solution to any given problem.</div>
+            <div>
+                <img src="img/ExploreImg.jpg" data-aos="zoom-in" style="width:90%;">
+            </div>
+        </div>
+        <br>
+        <div>
+            <a href="resume.html" class="button">View Resume</a>
+            <a href="projects.html" class="button">View Projects</a>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="https://stackoverflow.com/users/10740446/bedir" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bediruna" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+        <br>
+        <span> Bedir Aygun</span>
+    </div>
+
+</body></html>

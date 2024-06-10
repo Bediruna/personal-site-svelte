@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Bedir Aygun</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() != 0) {
+                $("#nav").removeClass("animateSlideUp");
+            }
+        });
+        $(function () {
+            typeWriter();
+
+            AOS.init({
+                duration: 1100,
+            });
+        });
+        var i = 0;
+        var txt = 'Developer';
+        var speed = 120;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("developerDescriptor").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+    <style>
+        .image.fit img {
+            width: 100%;
+        }
+
+        #posts {
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -moz-align-items: -moz-stretch;
+            -webkit-align-items: -webkit-stretch;
+            -ms-align-items: -ms-stretch;
+            align-items: stretch;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+        }
+
+        #posts>* {
+            -moz-flex-shrink: 1;
+            -webkit-flex-shrink: 1;
+            -ms-flex-shrink: 1;
+            flex-shrink: 1;
+            -moz-flex-grow: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-grow: 0;
+            flex-grow: 0;
+            width: 50%;
+            padding: 4rem;
+            width: 50%;
+        }
+
+        #posts>article {
+            border-color: #eeeeee;
+            border-left-width: 2px;
+            border-style: solid;
+            border-top-width: 2px;
+            text-align: center;
+            border-right: none;
+            border-bottom: none;
+            list-style-type: none;
+        }
+
+        #posts>article ul {
+            list-style-type: none;
+        }
+
+        #posts>article> :last-child {
+            margin-bottom: 0;
+        }
+
+        #posts>article:nth-child(2n - 1) {
+            border-left-width: 0;
+        }
+
+        #posts>article:nth-child(-n+2) {
+            border-top-width: 0;
+        }
+
+        @media screen and (max-width: 980px) {
+            #posts>* {
+                width: 50%;
+            }
+
+            #posts>* {
+                padding: 2.5rem;
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            #posts>* {
+                width: 100%;
+            }
+
+            #posts>* {
+                padding: 2rem;
+                width: 100%;
+            }
+
+            #posts>article:nth-child(2n - 1) {
+                border-left-width: 2px;
+            }
+
+            #posts>article:nth-child(-n+2) {
+                border-top-width: 2px;
+            }
+
+            #posts>article:nth-child(n) {
+                border-left-width: 0;
+            }
+
+            #posts>article:nth-child(-n+1) {
+                border-top-width: 0;
+            }
+
+            #posts>article .image {
+                max-width: 25rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <div class="centeredDiv">
+            <div id="mainText">BEDIR</div>
+            <ul id="descriptors">
+                <li id="developerDescriptor" style="min-width: 115px"></li>|
+                <li data-aos="zoom-in" data-aos-duration="1700">Designer</li>|
+                <li data-aos="fade-left" data-aos-duration="1700">Explorer</li>
+            </ul>
+        </div>
+    </div>
+    <nav id="nav" class="animateSlideUp">
+        <ul id="navLinks" class="links">
+            <li><a href="index.html"><i class="far fa-user"></i> Bedir</a></li>
+            <li><a href="resume.html"><i class="far fa-file"></i> Resume</a></li>
+            <li class="active"><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://stackoverflow.com/users/10740446/bedir"><i class="fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bediruna"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+    <div id="mobileNav" data-aos="fade-left">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <li><a href="index.html" class="mobileNavLink"><i class="far fa-user"></i> Bedir</a></li>
+            <li><a href="resume.html" class="mobileNavLink"><i class="far fa-file"></i> Resume</a></li>
+            <li><a href="projects.html" class="mobileNavLink"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="https://stackoverflow.com/users/10740446/bedir" target="_blank"><i
+                        class="mobileNavIcon fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun" target="_blank"><i class="mobileNavIcon fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://github.com/bediruna" target="_blank"><i class="mobileNavIcon fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="mobileNavIcon fa fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div id="mainCard">
+        <!-- Posts -->
+        <section id="posts">
+            <article>
+                <header>
+                    <h2>Student Planner<br />
+                        Xamarin App</h2>
+                </header>
+                <div class="image fit"><img src="img/studentPlanner.gif" alt="" /></div>
+                <p>Mobile application made using Xamarin. Stores and tracks term, class, and assignment information.
+                    Published to play store, click to download.</p>
+                <a href="https://github.com/Bediruna/StudentPlannerXamarin" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a><br />
+                <a href="https://play.google.com/store/apps/details?id=com.ABedirApp.studentplannerxamarin"
+                    target="_blank" class="button"><span class="icon brands fab fa-google-play"></span> View Download
+                    Link</a>
+            </article>
+            <article>
+                <header>
+                    <h2>A Bedir<br />
+                        University</h2>
+                </header>
+                <div class="image fit"><img src="img/ABedirUniversity.gif" alt="" /></div>
+                <p>A custom university portal meant for accepting student applications, student portal, and admin
+                    portal. Built using ASP.NET C# and web technologies.</p>
+                <a href="https://github.com/Bediruna/ABedirUniversity" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a><br />
+                <a href="https://www.abediruniversity.com/" target="_blank" class="button"><span
+                        class="icon brands fas fa-external-link-alt"></span> View Website</a>
+            </article>
+            <article>
+                <header>
+                    <h2>Nour<br />Limousine</h2>
+                </header>
+                <div class="image fit"><img src="img/nourLimousine.gif" alt="" /></div>
+                <p>Website created for a limousine service based in New York. Created using CSS, HTML, and JavaScript.
+                </p>
+                <a href="https://github.com/Bediruna/NourLimousine" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a><br />
+                <a href="http://www.nourlimousine.com/" target="_blank" class="button"><span
+                        class="icon brands fas fa-external-link-alt"></span> View Website</a>
+            </article>
+            <article>
+                <header>
+                    <h2>Custom<br />Spreadsheet</h2>
+                </header>
+                <div class="image fit"><img src="img/CustomSpreadScreenshot.PNG" alt="" /></div>
+                <p>Custom spreadsheet software that reads and writes from a JSON file. This software was built to be
+                    lightweight and responsive.</p>
+                <a href="https://github.com/Bediruna/CustomSpreadsheet" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a><br />
+                <a href="https://bedir.dev/projects/CustomSpreadsheet.php" target="_blank" class="button"><span
+                        class="icon brands fas fa-external-link-alt"></span> View Website</a>
+            </article>
+            <article>
+                <header>
+                    <h2>Imam<br />
+                        Basheer</h2>
+                </header>
+                <div class="image fit"><img src="img/ImamBasheer.PNG" alt="" /></div>
+                <p>Personal Page for Imam Basheer. Created using HTML, JavaScript, and CSS.</p>
+                <a href="https://github.com/Bediruna/BasheerBilaal" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a><br />
+                <a href="http://www.imambasheer.com/" target="_blank" class="button"><span
+                        class="icon brands fas fa-external-link-alt"></span> View Website</a>
+            </article>
+            <article>
+                <header>
+                    <h2>Math Ninja</h2>
+                </header>
+                <div class="image fit">
+                    <video style="width:100%" controls>
+                        <source src="img/MathNinjaVid.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <p>Educational math game designed to sharpen quick mental math skills. Created using Java based Processing Development Environment.</p>
+                <a href="https://github.com/Bediruna/MathNinja" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a>
+            </article>
+            <article>
+                <header>
+                    <h2>Automation<br />
+                        Scripts</h2>
+                </header>
+                <div class="image fit"><img src="img/AutomationScreenshot.PNG" alt="" /></div>
+                <p>Automation scripts written to automate repetive and error prone tasks. This saves hours of time and
+                    strain while also minimizing errors. Written in a visual basic like language in AutoIt.</p>
+                <a href="https://github.com/Bediruna/AutomationScripts" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a>
+            </article>
+            <article>
+                <header>
+                    <h2>Read PDF &<br />
+                        Create Spreadsheet</h2>
+                </header>
+                <div class="image fit"><img src="img/ReadPDFScreenshot.PNG" alt="" /></div>
+                <p>This application reads multiple PDF files and searches for spefic values. The software then enters those values into an excel spreadsheet for reporting. 
+                    In this example multiple invoices with the same format are searched for the customer name and total income. This software was written with C#.</p>
+                <a href="https://github.com/Bediruna/CreateXLFromPDFs" target="_blank" class="button"><span
+                        class="icon brands fab fa-github"></span> View on GitHub</a>
+            </article>
+        </section>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="https://stackoverflow.com/users/10740446/bedir" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bedir-aygun" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bediruna" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:contact@bedir.dev"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+        <br>
+        <span> Bedir Aygun</span>
+    </div>
+
+</body>
+
+</html>
