@@ -1,26 +1,40 @@
-<nav>
-    <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="/resume">resume</a></li>
-        <li><a href="/work">work</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/resume">Resume</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="/work">Work</a>
+            </li> -->
+        </ul>
+    </div>
 </nav>
 
 <style>
-    /* Your styles here */
+    .custom-bg {
+        background-color: black !important;
+    }
+
     nav ul {
-        list-style-type: none; /* Remove bullet points */
-        padding: 0; /* Remove default padding */
-        margin: 0; /* Remove default margin */
-        display: flex; /* Use flexbox to align items horizontally */
+        padding: 0;
+        margin: 0;
+        display: flex;
     }
 
     nav ul li {
-        margin-right: 20px; /* Add some spacing between items */
+        margin-right: 20px;
     }
 
     nav ul li a {
         text-decoration: none;
-        color: white;
+    }
+
+    .ms-auto {
+        display: flex;
+        align-items: center;
     }
 </style>
