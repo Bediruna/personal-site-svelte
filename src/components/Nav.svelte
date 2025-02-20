@@ -11,6 +11,12 @@
                 <a class="nav-link" href="/work">Work</a>
             </li> -->
         </ul>
+        <!-- <button class="theme-toggle-btn ms-auto" on:click={toggleTheme}>
+            { $theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode' }
+        </button> -->
+        <button class="theme-toggle-btn ms-auto">
+            🌙 ☀️
+        </button>
     </div>
 </nav>
 
@@ -36,5 +42,14 @@
     .ms-auto {
         display: flex;
         align-items: center;
+    }
+    .theme-toggle-btn {
+        border: none;
+        background: none;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background 0.3s;
     }
 </style>
