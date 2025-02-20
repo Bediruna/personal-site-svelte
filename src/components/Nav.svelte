@@ -1,3 +1,7 @@
+<script>    
+    import ThemeToggle from '../components/ThemeToggle.svelte';
+</script>
+
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -11,12 +15,7 @@
                 <a class="nav-link" href="/work">Work</a>
             </li> -->
         </ul>
-        <!-- <button class="theme-toggle-btn ms-auto" on:click={toggleTheme}>
-            { $theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode' }
-        </button> -->
-        <button class="theme-toggle-btn ms-auto">
-            🌙 ☀️
-        </button>
+        <ThemeToggle />
     </div>
 </nav>
 
