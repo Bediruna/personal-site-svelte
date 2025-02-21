@@ -20,10 +20,6 @@
 </nav>
 
 <style>
-    .custom-bg {
-        background-color: black !important;
-    }
-
     nav ul {
         padding: 0;
         margin: 0;
@@ -36,19 +32,5 @@
 
     nav ul li a {
         text-decoration: none;
-    }
-
-    .ms-auto {
-        display: flex;
-        align-items: center;
-    }
-    .theme-toggle-btn {
-        border: none;
-        background: none;
-        font-size: 1rem;
-        cursor: pointer;
-        padding: 8px 12px;
-        border-radius: 5px;
-        transition: background 0.3s;
     }
 </style>
