@@ -11,13 +11,11 @@
       "(prefers-color-scheme: dark)",
     ).matches;
     theme = savedTheme || (prefersDark ? "dark" : "light");
-    document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("data-bs-theme", theme);
   });
 
   function toggleTheme() {
     theme = theme === "light" ? "dark" : "light";
-    document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("data-bs-theme", theme);
     localStorage.setItem("theme", theme);
   }

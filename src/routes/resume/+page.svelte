@@ -5,67 +5,74 @@
 
     const jobs = [
         {
-            title: 'Software Engineer (Contract)',
+            title: 'Software Engineer',
+            company: 'Beacon Hill (Contract)',
+            period: 'Jun 2024 – Present',
+            description: 'Architecting and implementing AWS-hosted solutions utilizing .NET 8 and Lambda functions. Developing cross-platform solutions by integrating Xamarin with .NET Web API.',
+            tasks: [
+                'Architected and implemented AWS-hosted solutions using .NET 8 and Lambda functions.',
+                'Streamlined customer enrollment processes through cloud integration.',
+                'Engineered cross-platform solutions by integrating Xamarin with .NET Web API.',
+                'Established robust communication channels between mobile applications and cloud infrastructure.'
+            ]
+        },
+        {
+            title: '.NET Web Developer',
+            company: 'Traffic Safety Store',
+            period: 'Jun 2023 – Jun 2024',
+            description: 'Full-stack eCommerce platform development using C# .NET and Vue.js. Optimizing database performance and designing scalable APIs.',
+            tasks: [
+                'Developed full-stack eCommerce platform using C# .NET and Vue.js.',
+                'Implemented hybrid ORM strategy using Entity Framework and Dapper, reducing query response times by 40%.',
+                'Designed and deployed scalable REST APIs for seamless front-end and back-end integration.',
+                'Established testing protocols and code quality standards to enhance application reliability.'
+            ]
+        },
+        {
+            title: 'Web Application Developer (Contract)',
             company: 'Center for Applied Management',
-            period: 'Oct 2022 - Present',
-            description: 'Full stack web application development using .Net on the back end. React on the front end. Fixing bugs and adding features to the existing project.',
+            period: 'Oct 2022 – May 2023',
+            description: 'Modernizing legacy codebase using React and developing RESTful APIs with .NET.',
             tasks: [
-                'Working to bring existing code up to current standards.',
-                'Adding client-requested features.'
+                'Engineered responsive front-end features using React.',
+                'Modernized legacy codebase to improve maintainability and performance.',
+                'Developed RESTful APIs using .NET, ensuring seamless integration with front-end components.'
             ]
         },
         {
-            title: 'Freelance Software Developer',
-            company: 'Upwork',
-            period: 'Jun 2022 - Present',
-            description: '.Net Core Web Application development. Working on the company\'s eCommerce platform. Adding features and fixing bugs for an existing solution.',
-            tasks: [
-                'Assisted clients with basic web development.',
-                'Used my experience with HTML, CSS, and JS to improve existing client websites.',
-                'Provided game testing feedback based on Unity game development experience.',
-                'Provided advice based on years of varied software development experience.'
-            ]
-        },
-        {
-            title: 'Full Stack .Net Developer',
+            title: 'Full Stack .NET Developer',
             company: 'Amerinational Management Systems',
-            period: 'Nov 2020 - Jul 2022',
-            description: 'Full stack .NET development. Working with .NET Core Web APIs, Razor Pages, MVC, Xamarin, Blazor, and web development. Developing applications and systems starting from setting up the server and database, all the way to creating and fine tuning the user interface.',
+            period: 'Nov 2020 – Jul 2022',
+            description: 'Full-stack development using .NET Core APIs, Razor Pages, MVC, and Blazor. Migrated a 30-year-old system to a modern .NET Core solution.',
             tasks: [
-                'Played a key role in updating a 30-year-old system to a modern .Net Core solution.',
-                'Developed systems that transported 1000s of messages daily.',
-                'Developed a Xamarin based mobile application. Allowing AMS to be competitive in the market and meet the needs of our clients.',
-                'Developed an application that automated document merging to save hours of manual labor.'
+                'Led migration of a 30-year-old martial arts software system to modern .NET Core architecture.',
+                'Developed high-throughput message processing systems handling thousands of daily transactions.',
+                'Created a Xamarin-based mobile application integrated with Web APIs.',
+                'Developed an automated document merging system to improve operational efficiency.'
             ]
         },
         {
             title: 'Software Developer',
             company: 'USALLIANCE Financial',
-            period: 'Nov 2018 - Oct 2020',
-            description: 'Designed and developed ASP.Net Web Forms applications from the front end to back end.',
+            period: 'Nov 2018 – Oct 2020',
+            description: 'Designed and developed ASP.Net Web Forms applications with full-stack responsibilities.',
             tasks: [
-                'Designed, developed, and maintained code solutions for business software applications.',
-                'Developed unit test cases/criteria to verify all functionality is working correctly based on specified requirements. Contribute to testing strategies, architecture, and provide feedback for improvements.',
-                'Worked with QA and business teams to understand the modules and components targeted for development.',
-                'Worked closely with the Business Analysts to ensure code quality, accuracy, and the correct business solution has been developed.',
-                'Troubleshot program problems and failures and work with teams and vendors to resolve issues.',
-                'Provided assistance to projects that support the implementation of company-wide information systems in collaboration with functional users.',
-                'Developed and modified technical documentation to support application implementation, maintenance, and operations.',
-                'Technologies used include: C#, ASP.NET, JavaScript, jQuery, HTML, CSS, and SQL.'
+                'Designed and integrated full-stack financial applications using C#, ASP.NET Web Forms, and .NET Core.',
+                'Built responsive front-end interfaces with JavaScript, jQuery, HTML, CSS, and Bootstrap.',
+                'Collaborated with business analysts to implement testing protocols and ensure application reliability.',
+                'Authored technical documentation and best practices for software maintenance and deployment.'
             ]
         },
         {
             title: 'Software Developer / EDI Manager',
             company: 'DM World Logistics',
-            period: 'Jun 2017 - Oct 2018',
-            description: 'Developed internal transportation management software from the ground up. Technologies used include: C#, ASP.NET, JavaScript, HTML, CSS, PHP, and SQL.',
+            period: 'May 2017 – Oct 2018',
+            description: 'Developed transportation management software with integrated EDI capabilities.',
             tasks: [
-                'Designed and made critical choices in the development of software.',
-                'Wrote and implemented automation scripts that saved hours of repetitive work.',
-                'Researched, implemented, and maintained software, utilities, tools, and scripts to automate or improve user experiences and efficiencies.',
-                'Communicated directly with upper-level management to determine and implement the best solution for software-related issues.',
-                'Facilitated EDI connection with essential customers.',
-                'Maintained and troubleshot EDI systems.'
+                'Designed and developed transportation management software from the ground up.',
+                'Integrated EDI systems to streamline logistics operations.',
+                'Automated key processes to improve operational efficiency.',
+                'Communicated directly with management to implement optimal software solutions.'
             ]
         }
     ];
@@ -85,22 +92,21 @@
 
     const certifications = [
         {
+            name: 'AWS Certified Cloud Practitioner',
+            date: 'Sept 2024'
+        },
+        {
+            name: 'Microsoft Certified: Azure Fundamentals',
+            date: 'Apr 2024',
+            id: '996505428'
+        },
+        {
             name: 'CompTIA Project+',
             date: 'Aug 2020'
         },
         {
             name: 'CompTIA A+',
             date: 'May 2018'
-        },
-        {
-            name: 'CIW Advanced HTML5 & CSS3 Specialist',
-            date: 'Jan 2018',
-            id: 'CIW ID 800822'
-        },
-        {
-            name: 'CIW User Interface Designer',
-            date: 'Jul 2018',
-            id: 'CIW ID 800822'
         }
     ];
 </script>

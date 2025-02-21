@@ -13,7 +13,7 @@
                 <i class="fa fa-calendar fa-fw me-2"></i>{cert.date}
             </h6>
             {#if cert.id}
-                <p>{cert.id}</p>
+                <p>ID: {cert.id}</p>
             {/if}
             <hr />
         </div>
