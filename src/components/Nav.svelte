@@ -12,6 +12,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/resume">RESUME</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/work">WORK</a>
+            </li>
         </ul>
 
         <!-- Right nav items -->
@@ -24,6 +27,16 @@
                     rel="noopener noreferrer"
                 >
                     <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="https://github.com/bediruna"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-github"></i>
                 </a>
             </li>
             <li class="nav-item">
